@@ -1,16 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users, Clock, Shield, Smartphone } from "lucide-react";
-
 const Index = () => {
   return <div className="min-h-screen font-opensans bg-[#FAFAFA]" dir="rtl">
       {/* Hero Section */}
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-16">
-            <div className="text-2xl font-bold text-gray-800 font-assistant">מניוקראפט</div>
+            <div className="text-6xl font-bold text-gray-800 font-assistant">MenuCraft</div>
             <div className="space-x-4 flex flex-row-reverse">
               <Button variant="ghost" className="hover:text-primary mr-4">התחברות</Button>
               <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90">נסה חינם ל-14 ימים</Button>
@@ -82,7 +80,7 @@ const Index = () => {
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-assistant text-gray-800">למה לבחור במניוקראפט?</h2>
+            <h2 className="text-3xl font-bold mb-4 font-assistant text-gray-800 md:text-5xl">למה לבחור ב-MenuCraft?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">חווה את העתיד של ניהול תפריטים עם תכונות שתוכננו להקל על חייך ולייעל את העסק שלך.</p>
           </div>
 
@@ -118,7 +116,7 @@ const Index = () => {
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-assistant text-gray-800">איך זה עובד</h2>
+            <h2 className="text-3xl font-bold mb-4 font-assistant text-gray-800 md:text-5xl">איך זה עובד</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">התחל להשתמש במניוקראפט בשלושה שלבים פשוטים. התהליך המייעל שלנו מבטיח שתוכל להעלות את התפריט הדיגיטלי שלך תוך דקות.</p>
           </div>
 
@@ -163,5 +161,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
