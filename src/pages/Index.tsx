@@ -1,12 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen font-opensans bg-[#FAFAFA]">
+  return <div className="min-h-screen font-opensans bg-[#FAFAFA]">
       {/* Hero Section */}
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
@@ -20,46 +17,56 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <motion.h1 
-                className="text-4xl md:text-6xl font-bold leading-tight font-assistant"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
+              <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight font-assistant" initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.8
+            }}>
                 Update Your Menu from Anywhere,
                 <span className="block text-[#F97316]">with One Click!</span>
               </motion.h1>
-              <motion.p 
-                className="text-lg text-gray-600 max-w-xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
+              <motion.p className="text-lg text-gray-600 max-w-xl" initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.8,
+              delay: 0.2
+            }}>
                 Keep your menu up-to-date effortlessly. Change prices, add specials, or update items instantly - all from your phone or computer.
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="flex gap-4 items-center"
-              >
+              <motion.div initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.8,
+              delay: 0.4
+            }} className="flex gap-4 items-center">
                 <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg">
                   Try Free for 14 Days
                 </Button>
-                <span className="text-gray-500">No credit card required</span>
+                <span className="text-gray-500">with no obligation!</span>
               </motion.div>
             </div>
-            <motion.div
-              className="float-animation"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <img 
-                src="/lovable-uploads/9915b5e5-fdde-447c-971f-77389c58f3eb.png"
-                alt="Menu Update Demo" 
-                className="w-full max-w-lg mx-auto rounded-lg shadow-lg"
-              />
+            <motion.div className="float-animation" initial={{
+            opacity: 0,
+            scale: 0.8
+          }} animate={{
+            opacity: 1,
+            scale: 1
+          }} transition={{
+            duration: 0.8
+          }}>
+              <img src="/lovable-uploads/9915b5e5-fdde-447c-971f-77389c58f3eb.png" alt="Menu Update Demo" className="w-full max-w-lg mx-auto rounded-lg shadow-lg" />
             </motion.div>
           </div>
         </div>
@@ -107,16 +114,10 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-assistant text-gray-800">
             Ready to modernize your menu?
           </h2>
-          <p className="text-gray-600 mb-8">
-            Join thousands of restaurants already using MenuCraftor to streamline their operations.
-          </p>
-          <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg">
-            Try Free for 14 Days
-          </Button>
+          <p className="text-gray-600 mb-8">Join us to be more efficient!</p>
+          <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg">Try Free for 14 Days</Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
