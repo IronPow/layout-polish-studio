@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -81,7 +82,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <Upload className="w-12 h-12 mb-6 text-[#F97316]" />
               <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">Upload Your Menu</h3>
               <p className="text-gray-600">
@@ -89,7 +90,7 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <QrCode className="w-12 h-12 mb-6 text-[#F97316]" />
               <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">Get Your QR Code</h3>
               <p className="text-gray-600">
@@ -97,7 +98,7 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <Users className="w-12 h-12 mb-6 text-[#F97316]" />
               <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">Start Serving</h3>
               <p className="text-gray-600">
