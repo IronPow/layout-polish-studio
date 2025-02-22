@@ -1,12 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="hero-gradient py-20 px-4 md:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -20,44 +17,55 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <motion.h1 
-                className="text-4xl md:text-6xl font-bold leading-tight"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
+              <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight" initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.8
+            }}>
                 Transform Your Menu
                 <span className="block text-primary">Into a Digital Experience</span>
               </motion.h1>
-              <motion.p 
-                className="text-lg text-gray-600 max-w-xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
+              <motion.p className="text-lg text-gray-600 max-w-xl" initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.8,
+              delay: 0.2
+            }}>
                 Create beautiful digital menus for your restaurant. Generate QR codes instantly and let your customers browse your menu with ease.
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-              >
+              <motion.div initial={{
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.8,
+              delay: 0.4
+            }}>
                 <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
                   Get Started
                 </Button>
               </motion.div>
             </div>
-            <motion.div
-              className="float-animation"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <img 
-                src="/placeholder.svg" 
-                alt="Digital Menu" 
-                className="w-full max-w-lg mx-auto"
-              />
+            <motion.div className="float-animation" initial={{
+            opacity: 0,
+            scale: 0.8
+          }} animate={{
+            opacity: 1,
+            scale: 1
+          }} transition={{
+            duration: 0.8
+          }}>
+              <img alt="Digital Menu" className="w-full max-w-lg mx-auto" src="/lovable-uploads/9915b5e5-fdde-447c-971f-77389c58f3eb.png" />
             </motion.div>
           </div>
         </div>
@@ -113,8 +121,6 @@ const Index = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
