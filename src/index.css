@@ -11,10 +11,10 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 32 95% 44%;
+    --primary: 24 95% 53%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 240 5% 25%;
+    --secondary-foreground: 0 0% 98%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 4.8% 95.9%;
@@ -23,8 +23,8 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 32 95% 44%;
-    --radius: 1rem;
+    --ring: 24 95% 53%;
+    --radius: 0.75rem;
   }
 }
 
@@ -35,22 +35,6 @@
   body {
     @apply bg-background text-foreground antialiased;
   }
-}
-
-.hero-gradient {
-  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-}
-
-.feature-card {
-  @apply relative overflow-hidden rounded-2xl p-6 bg-white shadow-lg transition-all duration-300 hover:shadow-xl;
-}
-
-.feature-icon {
-  @apply w-12 h-12 mb-4 text-primary/80;
-}
-
-.glass-card {
-  @apply bg-white/90 backdrop-blur-md shadow-lg rounded-2xl border border-white/20;
 }
 
 @keyframes float {
