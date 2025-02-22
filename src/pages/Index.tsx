@@ -8,7 +8,7 @@ const Index = () => {
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-16">
-            <div className="text-2xl font-bold text-gray-800 font-assistant">MenuCraftor</div>
+            <div className="text-2xl font-bold text-gray-800 font-assistant">MenuCraft</div>
             <div className="space-x-4">
               <Button variant="ghost" className="hover:text-primary">Login</Button>
               <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90">Try Free for 14 Days</Button>
