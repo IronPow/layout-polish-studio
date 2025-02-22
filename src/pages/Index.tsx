@@ -8,7 +8,7 @@ const Index = () => {
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-16">
-            <div className="text-2xl font-bold text-gray-800 font-assistant">MenuCraft</div>
+            <div className="text-2xl font-bold text-gray-800 font-assistant">MenuCraftor</div>
             <div className="space-x-4">
               <Button variant="ghost" className="hover:text-primary">Login</Button>
               <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90">Try Free for 14 Days</Button>
@@ -81,7 +81,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-7 shadow-50 hover:shadow-xl transition-shadow duration-300">
+            <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <Upload className="w-12 h-12 mb-6 text-[#F97316]" />
               <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">Upload Your Menu</h3>
               <p className="text-gray-600">
