@@ -20,8 +20,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        assistant: ['Assistant', 'sans-serif'],
-        opensans: ['Open Sans', 'sans-serif'],
+        heebo: ['Heebo', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -81,3 +81,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

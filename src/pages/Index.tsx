@@ -1,10 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users, Clock, Shield, Smartphone } from "lucide-react";
 
 const Index = () => {
-  return <div className="min-h-screen font-opensans bg-[#FAFAFA]" dir="rtl">
+  return <div className="min-h-screen font-heebo bg-[#FAFAFA]" dir="rtl">
       {/* Hero Section */}
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
@@ -30,7 +31,7 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight font-assistant" initial={{
+              <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight font-rubik" initial={{
               opacity: 0,
               y: 20
             }} animate={{
@@ -99,7 +100,7 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-4 font-assistant text-gray-800 md:text-5xl">למה לבחור ב-MenuCraft?</h2>
+            <h2 className="text-3xl font-bold mb-4 font-rubik text-gray-800 md:text-5xl">למה לבחור ב-MenuCraft?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">חווה את העתיד של ניהול תפריטים עם תכונות שתוכננו להקל על חייך ולייעל את העסק שלך.</p>
           </motion.div>
 
@@ -112,7 +113,7 @@ const Index = () => {
             >
               <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <Clock className="w-12 h-12 mb-6 text-[#F97316]" />
-                <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">עדכונים בזמן אמת</h3>
+                <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">עדכונים בזמן אמת</h3>
                 <p className="text-gray-600">
                   עדכן את התפריט שלך מיידית, בכל זמן. השינויים משתקפים מיד בכל התפריטים הדיגיטליים שלך.
                 </p>
@@ -127,7 +128,7 @@ const Index = () => {
             >
               <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <Shield className="w-12 h-12 mb-6 text-[#F97316]" />
-                <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">פלטפורמה מאובטחת</h3>
+                <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">פלטפורמה מאובטחת</h3>
                 <p className="text-gray-600">
                   נתוני התפריט שלך מוגנים באבטחה ברמה עסקית. תוכל לנוח בשקט בידיעה שהמידע שלך בטוח.
                 </p>
@@ -142,7 +143,7 @@ const Index = () => {
             >
               <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <Smartphone className="w-12 h-12 mb-6 text-[#F97316]" />
-                <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">עיצוב מותאם לנייד</h3>
+                <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">עיצוב מותאם לנייד</h3>
                 <p className="text-gray-600">
                   נהל את התפריט שלך מכל מכשיר. הפלטפורמה שלנו מותאמת לשימוש הן במחשב והן בנייד.
                 </p>
@@ -162,14 +163,14 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-4 font-assistant text-gray-800 md:text-5xl">איך זה עובד</h2>
+            <h2 className="text-3xl font-bold mb-4 font-rubik text-gray-800 md:text-5xl">איך זה עובד</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">התחל להשתמש במניוקראפט בשלושה שלבים פשוטים. התהליך המייעל שלנו מבטיח שתוכל להעלות את התפריט הדיגיטלי שלך תוך דקות.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <motion.div className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <Upload className="w-12 h-12 mb-6 text-[#F97316]" />
-              <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">העלה את התפריט שלך</h3>
+              <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">העלה את התפריט שלך</h3>
               <p className="text-gray-600">
                 פשוט העלה את התפריט הקיים שלך או צור חדש באמצעות העורך האינטואיטיבי שלנו. ייבא מ-PDF, Word, או התחל מאפס - הבחירה שלך.
               </p>
@@ -177,7 +178,7 @@ const Index = () => {
 
             <motion.div className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <QrCode className="w-12 h-12 mb-6 text-[#F97316]" />
-              <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">קבל את קוד ה-QR שלך</h3>
+              <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">קבל את קוד ה-QR שלך</h3>
               <p className="text-gray-600">
                 קבל קוד QR מותאם אישית באופן מיידי. הדפס אותו על כרטיסי שולחן, הוסף אותו לתפריט הקיים שלך, או הצג אותו בכל מקום במסעדה.
               </p>
@@ -185,7 +186,7 @@ const Index = () => {
 
             <motion.div className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <Users className="w-12 h-12 mb-6 text-[#F97316]" />
-              <h3 className="text-xl font-semibold mb-2 font-assistant text-gray-800">התחל לשרת</h3>
+              <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">התחל לשרת</h3>
               <p className="text-gray-600">
                 צפה כיצד לקוחות גולשים בקלות בתפריט הדיגיטלי שלך. עקוב אחר צפיות, פריטים פופולריים, ועדכן בזמן אמת לפי הצורך.
               </p>
@@ -203,7 +204,7 @@ const Index = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-assistant text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-rubik text-gray-800">
             מוכן לחדש את התפריט שלך?
           </h2>
           <p className="text-gray-600 mb-8">הצטרף ל-MenuCraft ותוכל לייעל את הפעילות שלך ולשפר את חוויית הלקוח בקלות ובמהירות!</p>
@@ -219,3 +220,4 @@ const Index = () => {
     </div>;
 };
 export default Index;
+
