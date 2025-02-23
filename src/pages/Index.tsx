@@ -5,7 +5,7 @@ import { Upload, QrCode, Users, Clock, Shield, Smartphone } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen font-heebo bg-[#FAFAFA]" dir="rtl">
       {/* Hero Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 border-b bg-zinc-50">
+      <section className="py-1 px-4 md:px-6 lg:px-8 border-b bg-zinc-50">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-1">
             <motion.img alt="MenuCraft לוגו" initial={{
