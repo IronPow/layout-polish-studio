@@ -16,7 +16,7 @@ const Index = () => {
             y: 0
           }} transition={{
             duration: 0.5
-          }} src="/lovable-uploads/a5bd54f2-d227-4ad5-af5c-4a620c8ac237.png" className="h-100 w-auto object-contain" />
+          }} src="/lovable-uploads/a5bd54f2-d227-4ad5-af5c-4a620c8ac237.png" className="h-60 w-auto object-contain" />
             <div className="space-x-4 flex flex-row-reverse">
               <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300">התחברות</Button>
               <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90 transform hover:scale-105 transition-all duration-300">
