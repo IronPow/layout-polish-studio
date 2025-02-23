@@ -1,29 +1,25 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users, Clock, Shield, Smartphone } from "lucide-react";
-
 const Index = () => {
   return <div className="min-h-screen font-heebo bg-[#FAFAFA]" dir="rtl">
       {/* Hero Section */}
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-16">
-            <motion.img 
-              src="/lovable-uploads/9915b5e5-fdde-447c-971f-77389c58f3eb.png"
-              alt="MenuCraft לוגו"
-              className="h-16 w-auto"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            />
+            <motion.img alt="MenuCraft לוגו" initial={{
+            opacity: 0,
+            y: -20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.5
+          }} src="/lovable-uploads/551229bb-b3ab-4126-9058-380840d9f105.png" className="h-500 w-auto" />
             <div className="space-x-4 flex flex-row-reverse">
               <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300">התחברות</Button>
-              <Button 
-                variant="default" 
-                className="bg-[#F97316] hover:bg-[#F97316]/90 transform hover:scale-105 transition-all duration-300"
-              >
+              <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90 transform hover:scale-105 transition-all duration-300">
                 נסה חינם ל-14 ימים
               </Button>
             </div>
@@ -93,24 +89,34 @@ const Index = () => {
       {/* Benefits Section */}
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <motion.div className="text-center mb-16" initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6
+        }}>
             <h2 className="text-3xl font-bold mb-4 font-rubik text-gray-800 md:text-5xl">למה לבחור ב-MenuCraft?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">חווה את העתיד של ניהול תפריטים עם תכונות שתוכננו להקל על חייך ולייעל את העסק שלך.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.2
+          }}>
               <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <Clock className="w-12 h-12 mb-6 text-[#F97316]" />
                 <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">עדכונים בזמן אמת</h3>
@@ -120,12 +126,18 @@ const Index = () => {
               </Card>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.4
+          }}>
               <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <Shield className="w-12 h-12 mb-6 text-[#F97316]" />
                 <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">פלטפורמה מאובטחת</h3>
@@ -135,12 +147,18 @@ const Index = () => {
               </Card>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: 0.6
+          }}>
               <Card className="p-8 border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <Smartphone className="w-12 h-12 mb-6 text-[#F97316]" />
                 <h3 className="text-xl font-semibold mb-2 font-rubik text-gray-800">עיצוב מותאם לנייד</h3>
@@ -156,13 +174,17 @@ const Index = () => {
       {/* How It Works Section */}
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <motion.div className="text-center mb-16" initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6
+        }}>
             <h2 className="text-3xl font-bold mb-4 font-rubik text-gray-800 md:text-5xl">איך זה עובד</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">התחל להשתמש במניוקראפט בשלושה שלבים פשוטים. התהליך המייעל שלנו מבטיח שתוכל להעלות את התפריט הדיגיטלי שלך תוך דקות.</p>
           </motion.div>
@@ -197,21 +219,26 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="bg-gray-50 py-20 px-4 md:px-6 lg:px-8">
-        <motion.div 
-          className="max-w-4xl mx-auto text-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <motion.div className="max-w-4xl mx-auto text-center" initial={{
+        opacity: 0,
+        scale: 0.95
+      }} whileInView={{
+        opacity: 1,
+        scale: 1
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.6
+      }}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-rubik text-gray-800">
             מוכן לחדש את התפריט שלך?
           </h2>
           <p className="text-gray-600 mb-8">הצטרף ל-MenuCraft ותוכל לייעל את הפעילות שלך ולשפר את חוויית הלקוח בקלות ובמהירות!</p>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <motion.div whileHover={{
+          scale: 1.05
+        }} whileTap={{
+          scale: 0.95
+        }}>
             <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg">נסה חינם ל-14 ימים</Button>
           </motion.div>
           <p className="mt-4 text-sm text-gray-500">לא נדרש כרטיס אשראי • ניתן לבטל בכל עת</p>
@@ -220,4 +247,3 @@ const Index = () => {
     </div>;
 };
 export default Index;
-
