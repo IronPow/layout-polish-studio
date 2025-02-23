@@ -3,9 +3,9 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users, Clock, Shield, Smartphone } from "lucide-react";
 const Index = () => {
-  return <div className="min-h-screen font-heebo bg-[#FAFAFA]" dir="rtl">
+  return <div dir="rtl" className="min-h-screen font-heebo bg-[#FAFAFA] py-[2px]">
       {/* Hero Section */}
-      <section className="py-1 px-4 md:px-6 lg:px-8 border-b bg-zinc-50">
+      <section className="px-4 md:px-6 border-b bg-zinc-50 lg:px-[33px] mx-0 py-0 my-0">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-1">
             <motion.img alt="MenuCraft לוגו" initial={{
@@ -87,7 +87,7 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-orange-400 hover:bg-orange-300">
+      <section className="px-4 md:px-6 bg-orange-300 hover:bg-orange-300 py-[65px] lg:px-[33px] mx-0 my-[78px]">
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-16" initial={{
           opacity: 0,
@@ -172,7 +172,7 @@ const Index = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-neutral-50">
+      <section className="px-4 md:px-6 lg:px-8 bg-neutral-50 py-0">
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-16" initial={{
           opacity: 0,
@@ -218,7 +218,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-orange-400 hover:bg-orange-300">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-orange-300 hover:bg-orange-300 my-[90px]">
         <motion.div className="max-w-4xl mx-auto text-center" initial={{
         opacity: 0,
         scale: 0.95
