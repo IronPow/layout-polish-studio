@@ -19,7 +19,7 @@ const Index = () => {
           }} src="/lovable-uploads/a5bd54f2-d227-4ad5-af5c-4a620c8ac237.png" className="h-60 w-auto object-contain" />
             <div className="space-x-4 flex flex-row-reverse">
               <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300">התחברות</Button>
-              <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90 transform hover:scale-105 transition-all duration-300">
+              <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-orange-500 hover:bg-orange-400">
                 נסה חינם ל-14 ימים
               </Button>
             </div>
@@ -62,7 +62,7 @@ const Index = () => {
               delay: 0.4
             }}>
                 <div className="flex gap-4 items-center">
-                  <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg">
+                  <Button className="text-white px-8 py-6 text-lg bg-orange-500 hover:bg-orange-400">
                     נסה חינם ל-14 ימים
                   </Button>
                   <span className="text-gray-500">ללא התחייבות!</span>
