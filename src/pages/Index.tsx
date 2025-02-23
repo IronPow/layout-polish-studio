@@ -7,7 +7,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-white py-20 px-4 md:px-6 lg:px-8 border-b">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex justify-between items-center mb-16">
+          <nav className="flex justify-between items-center mb-1">
             <motion.img alt="MenuCraft לוגו" initial={{
             opacity: 0,
             y: -20
