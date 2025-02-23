@@ -87,7 +87,7 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-[#FAFAFA]">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-gray-400 hover:bg-gray-300">
         <div className="max-w-7xl mx-auto">
           <motion.div className="text-center mb-16" initial={{
           opacity: 0,
@@ -218,7 +218,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-50 py-20 px-4 md:px-6 lg:px-8">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-gray-400 hover:bg-gray-300">
         <motion.div className="max-w-4xl mx-auto text-center" initial={{
         opacity: 0,
         scale: 0.95
