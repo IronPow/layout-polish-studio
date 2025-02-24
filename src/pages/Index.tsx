@@ -16,10 +16,10 @@ const Index = () => {
             y: 0
           }} transition={{
             duration: 0.5
-          }} src="/lovable-uploads/a5bd54f2-d227-4ad5-af5c-4a620c8ac237.png" className="h-60 w-auto object-contain" />
-            <div className="space-x-4 flex flex-row-reverse">
-              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300">התחברות</Button>
-              <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-orange-500 hover:bg-orange-400">
+          }} src="/lovable-uploads/974db8da-ad52-4a50-8e93-58dea15299be.png" className="h-50 w-auto object-contain" />
+            <div className="space-x-4 flex flex-row-reverse px-[41px]">
+              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300 text-base py-0 px-[47px] mx-0">התחברות</Button>
+              <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90 transform hover:scale-105 transition-all duration-300 font-normal mx-0 my-0 py-[28px] px-[50px] text-base">
                 נסה חינם ל-14 ימים
               </Button>
             </div>
@@ -62,7 +62,7 @@ const Index = () => {
               delay: 0.4
             }}>
                 <div className="flex gap-4 items-center">
-                  <Button className="text-white px-8 py-6 text-lg bg-orange-500 hover:bg-orange-400">
+                  <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8 py-6 text-lg">
                     נסה חינם ל-14 ימים
                   </Button>
                   <span className="text-gray-500">ללא התחייבות!</span>
