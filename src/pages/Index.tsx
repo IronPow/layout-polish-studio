@@ -16,9 +16,9 @@ const Index = () => {
             y: 0
           }} transition={{
             duration: 0.5
-          }} src="/lovable-uploads/974db8da-ad52-4a50-8e93-58dea15299be.png" className="h-45 w-auto object-contain" />
-            <div className="space-x-4 flex flex-row-reverse px-[41px]">
-              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300 text-base py-0 px-[47px] mx-0">התחברות</Button>
+          }} src="/lovable-uploads/b86eb3e2-e533-48ec-bc59-609df933ea7d.png" className="h-40 w-auto object-contain" />
+            <div className="space-x-4 flex flex-row-reverse px-[28px]">
+              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300 py-[27px] mx-[5px] px-[71px] text-base">התחברות</Button>
               <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90 transform hover:scale-105 transition-all duration-300 font-normal mx-0 my-0 py-[28px] px-[50px] text-base">
                 נסה חינם ל-14 ימים
               </Button>
