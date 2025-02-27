@@ -22,7 +22,7 @@ const Index = () => {
             </div>
             <div className="space-x-4 flex flex-row-reverse my-0 mx-0 px-0 py-[15px]">
               <Button variant="ghost" className="hover:text-[#F97316] mr-4 transition-colors duration-300 py-[22px] px-[39px]">התחברות</Button>
-              <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-[#F97316] hover:bg-orange-400 px-[20px] py-[21px]">
+              <Button variant="default" className="transform hover:scale-105 transition-all duration-300 px-[20px] py-[21px] bg-orange-500 hover:bg-orange-400">
                 נסה חינם ל-14 ימים
               </Button>
             </div>
@@ -40,7 +40,7 @@ const Index = () => {
               duration: 0.8
             }}>
                 עדכן את התפריט שלך מכל מקום,
-                <span className="block text-[#F97316]">בלחיצה אחת!</span>
+                <span className="block text-orange-500">בלחיצה אחת!</span>
               </motion.h1>
               <motion.p className="text-lg text-gray-600 max-w-xl" initial={{
               opacity: 0,
@@ -65,7 +65,7 @@ const Index = () => {
               delay: 0.4
             }}>
                 <div className="flex gap-4 items-center">
-                  <Button className="text-white px-8 py-6 text-lg bg-[#F97316] hover:bg-orange-400">
+                  <Button className="text-white px-8 py-6 text-lg bg-orange-500 hover:bg-orange-400">
                     נסה חינם ל-14 ימים
                   </Button>
                   <span className="text-gray-500">ללא התחייבות!</span>
