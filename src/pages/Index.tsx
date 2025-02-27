@@ -7,7 +7,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="px-4 md:px-6 border-b bg-zinc-50 lg:px-[33px] mx-0 py-0 my-0">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex justify-between items-center mb-1">
+          <nav className="flex justify-between items-center mb-1 px-[45px] my-[21px]">
             <motion.img alt="MenuCraft לוגו" initial={{
             opacity: 0,
             y: -20
@@ -17,8 +17,8 @@ const Index = () => {
           }} transition={{
             duration: 0.5
           }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-40 w-auto object-contain" />
-            <div className="space-x-4 flex flex-row-reverse">
-              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300">התחברות</Button>
+            <div className="space-x-4 flex flex-row-reverse mx-[7px]">
+              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300 px-[35px]">התחברות</Button>
               <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-orange-500 hover:bg-orange-400">
                 נסה חינם ל-14 ימים
               </Button>
