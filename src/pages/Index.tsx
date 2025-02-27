@@ -1,13 +1,18 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Upload, QrCode, Users, Clock, Shield, Smartphone } from "lucide-react";
+import { Upload, QrCode, Users, Clock, Shield, Smartphone, Menu } from "lucide-react";
+import { useState } from "react";
+
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   return <div dir="rtl" className="min-h-screen font-heebo bg-[#FAFAFA] py-[2px]">
       {/* Hero Section */}
       <section className="px-4 md:px-6 border-b bg-zinc-50 lg:px-[33px] mx-0 py-0 my-0">
         <div className="max-w-7xl mx-auto">
-          <nav className="flex justify-between items-center mb-1 px-[45px] my-[21px]">
+          <nav className="flex justify-between items-center mb-1 px-2 sm:px-[45px] my-[21px] relative">
             <div className="flex items-center">
               <motion.img alt="MenuCraft לוגו" initial={{
               opacity: 0,
@@ -17,20 +22,46 @@ const Index = () => {
               y: 0
             }} transition={{
               duration: 0.5
-            }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-40 w-auto object-contain" />
-              <h1 className="text-3xl font-bold ml-4 font-rubik text-slate-950">MENUCRAFT</h1>
+            }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-20 sm:h-40 w-auto object-contain" />
+              <h1 className="text-xl sm:text-3xl font-bold ml-2 sm:ml-4 font-rubik text-slate-950">MENUCRAFT</h1>
             </div>
-            <div className="space-x-4 flex flex-row-reverse my-0 mx-0 px-0 py-[15px]">
+            
+            {/* Mobile menu button */}
+            <div className="block md:hidden">
+              <Button 
+                variant="ghost" 
+                size="icon"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2"
+              >
+                <Menu className="h-6 w-6" />
+              </Button>
+            </div>
+            
+            {/* Desktop navigation */}
+            <div className="hidden md:flex space-x-4 flex-row-reverse my-0 mx-0 px-0 py-[15px]">
               <Button variant="ghost" className="hover:text-[#F97316] mr-4 transition-colors duration-300 py-[22px] px-[39px]">התחברות</Button>
               <Button variant="default" className="transform hover:scale-105 transition-all duration-300 px-[20px] py-[21px] bg-orange-500 hover:bg-orange-400">
                 נסה חינם ל-14 ימים
               </Button>
             </div>
+            
+            {/* Mobile menu dropdown */}
+            {mobileMenuOpen && (
+              <div className="absolute top-full right-0 w-full bg-white shadow-lg z-50 md:hidden">
+                <div className="flex flex-col p-4 space-y-4">
+                  <Button variant="default" className="w-full bg-orange-500 hover:bg-orange-400">
+                    נסה חינם ל-14 ימים
+                  </Button>
+                  <Button variant="ghost" className="w-full hover:text-[#F97316]">התחברות</Button>
+                </div>
+              </div>
+            )}
           </nav>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <motion.h1 className="text-4xl md:text-6xl font-bold leading-tight font-rubik" initial={{
+              <motion.h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight font-rubik" initial={{
               opacity: 0,
               y: 20
             }} animate={{
