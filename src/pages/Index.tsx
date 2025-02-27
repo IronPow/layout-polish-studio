@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -19,7 +18,7 @@ const Index = () => {
             }} transition={{
               duration: 0.5
             }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-40 w-auto object-contain" />
-              <h1 className="text-3xl font-bold text-[#F97316] ml-4 font-rubik">MENUCRAFT</h1>
+              <h1 className="text-3xl font-bold ml-4 font-rubik text-slate-950">MENUCRAFT</h1>
             </div>
             <div className="space-x-4 flex flex-row-reverse my-0 mx-0 px-0 py-[15px]">
               <Button variant="ghost" className="hover:text-[#F97316] mr-4 transition-colors duration-300 py-[22px] px-[39px]">התחברות</Button>
