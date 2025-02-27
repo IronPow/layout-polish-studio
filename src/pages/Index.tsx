@@ -19,11 +19,11 @@ const Index = () => {
             }} transition={{
               duration: 0.5
             }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-40 w-auto object-contain" />
-              <h1 className="text-3xl font-bold text-orange-500 ml-4 font-rubik">MENUCRAFT</h1>
+              <h1 className="text-3xl font-bold text-[#F97316] ml-4 font-rubik">MENUCRAFT</h1>
             </div>
             <div className="space-x-4 flex flex-row-reverse my-0 mx-0 px-0 py-[15px]">
-              <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300 py-[22px] px-[39px]">התחברות</Button>
-              <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-orange-500 hover:bg-orange-400 px-[20px] py-[21px]">
+              <Button variant="ghost" className="hover:text-[#F97316] mr-4 transition-colors duration-300 py-[22px] px-[39px]">התחברות</Button>
+              <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-[#F97316] hover:bg-orange-400 px-[20px] py-[21px]">
                 נסה חינם ל-14 ימים
               </Button>
             </div>
@@ -66,7 +66,7 @@ const Index = () => {
               delay: 0.4
             }}>
                 <div className="flex gap-4 items-center">
-                  <Button className="text-white px-8 py-6 text-lg bg-orange-500 hover:bg-orange-400">
+                  <Button className="text-white px-8 py-6 text-lg bg-[#F97316] hover:bg-orange-400">
                     נסה חינם ל-14 ימים
                   </Button>
                   <span className="text-gray-500">ללא התחייבות!</span>
@@ -243,7 +243,7 @@ const Index = () => {
         }} whileTap={{
           scale: 0.95
         }}>
-            <Button className="text-white px-8 py-6 text-lg bg-orange-500 hover:bg-orange-400">נסה חינם ל-14 ימים</Button>
+            <Button className="text-white px-8 py-6 text-lg bg-[#F97316] hover:bg-orange-400">נסה חינם ל-14 ימים</Button>
           </motion.div>
           <p className="mt-4 text-sm text-gray-500">לא נדרש כרטיס אשראי • ניתן לבטל בכל עת</p>
         </motion.div>
