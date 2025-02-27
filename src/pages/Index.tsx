@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -8,15 +9,18 @@ const Index = () => {
       <section className="px-4 md:px-6 border-b bg-zinc-50 lg:px-[33px] mx-0 py-0 my-0">
         <div className="max-w-7xl mx-auto">
           <nav className="flex justify-between items-center mb-1 px-[45px] my-[21px]">
-            <motion.img alt="MenuCraft לוגו" initial={{
-            opacity: 0,
-            y: -20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            duration: 0.5
-          }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-40 w-auto object-contain" />
+            <div className="flex items-center">
+              <motion.img alt="MenuCraft לוגו" initial={{
+              opacity: 0,
+              y: -20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              duration: 0.5
+            }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-40 w-auto object-contain" />
+              <h1 className="text-3xl font-bold text-orange-500 ml-4 font-rubik">MENUCRAFT</h1>
+            </div>
             <div className="space-x-4 flex flex-row-reverse my-0 mx-0 px-0 py-[15px]">
               <Button variant="ghost" className="hover:text-primary mr-4 transition-colors duration-300 py-[22px] px-[39px]">התחברות</Button>
               <Button variant="default" className="transform hover:scale-105 transition-all duration-300 bg-orange-500 hover:bg-orange-400 px-[20px] py-[21px]">
