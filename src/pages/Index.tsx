@@ -1,13 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Upload, QrCode, Users, Clock, Shield, Smartphone, Menu } from "lucide-react";
 import { useState } from "react";
-
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
   return <div dir="rtl" className="min-h-screen font-heebo bg-[#FAFAFA] py-[2px]">
       {/* Hero Section */}
       <section className="px-4 md:px-6 border-b bg-zinc-50 lg:px-[33px] mx-0 py-0 my-0">
@@ -22,18 +19,13 @@ const Index = () => {
               y: 0
             }} transition={{
               duration: 0.5
-            }} src="/lovable-uploads/9330ddab-a11f-4389-8348-fe5543bc79de.png" className="h-20 sm:h-40 w-auto object-contain" />
+            }} className="h-20 sm:h-40 w-auto object-contain" src="/lovable-uploads/ef2df96d-26de-43cf-b3b1-e6c04bd44473.png" />
               <h1 className="text-xl sm:text-3xl font-bold ml-2 sm:ml-4 font-rubik text-slate-950">MENUCRAFT</h1>
             </div>
             
             {/* Mobile menu button */}
             <div className="block md:hidden">
-              <Button 
-                variant="ghost" 
-                size="icon"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2"
-              >
+              <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="p-2">
                 <Menu className="h-6 w-6" />
               </Button>
             </div>
@@ -47,16 +39,14 @@ const Index = () => {
             </div>
             
             {/* Mobile menu dropdown */}
-            {mobileMenuOpen && (
-              <div className="absolute top-full right-0 w-full bg-white shadow-lg z-50 md:hidden">
+            {mobileMenuOpen && <div className="absolute top-full right-0 w-full bg-white shadow-lg z-50 md:hidden">
                 <div className="flex flex-col p-4 space-y-4">
                   <Button variant="default" className="w-full bg-orange-500 hover:bg-orange-400">
                     נסה חינם ל-14 ימים
                   </Button>
                   <Button variant="ghost" className="w-full hover:text-[#F97316]">התחברות</Button>
                 </div>
-              </div>
-            )}
+              </div>}
           </nav>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
