@@ -334,27 +334,29 @@ const SingleFileIndex = () => {
       </section>
       
       {/* CSS for animations */}
-      <style jsx>{`
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-          100% { transform: translateY(0px); }
-        }
+      <style>
+        {`
+          @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+          }
 
-        .float-animation {
-          animation: float 6s ease-in-out infinite;
-        }
+          .float-animation {
+            animation: float 6s ease-in-out infinite;
+          }
 
-        .fade-in {
-          opacity: 0;
-          animation: fadeIn 0.8s ease-out forwards;
-        }
+          .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+          }
 
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+        `}
+      </style>
     </div>
   );
 };
